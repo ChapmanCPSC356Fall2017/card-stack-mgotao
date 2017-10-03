@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onTouch">
+    <TextView
+        android:id="@+id/upperText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a"
+        android:textSize="50sp"
+        android:padding="10dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:textColor="#F00"/>
+
+    <ImageView
+        android:id="@+id/upperSuit"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/upperText"
+        android:src="@drawable/heart"/>
+
+    <ImageView
+        android:id="@+id/cardFace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/heart"/>
+
+    <ImageView
+        android:id="@+id/lowerSuit"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/cardFace"
+        android:src="@drawable/heart"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:rotation="180"
+        android:layout_marginTop="65dp"/>
+
+    <TextView
+        android:id="@+id/lowerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lowerSuit"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="2dp"
+        android:layout_marginEnd="2dp"
+        android:text="@string/a"
+        android:textSize="50sp"
+        android:padding="10dp"
+        android:textColor="#F00"
+        android:rotation="180"/>
+</RelativeLayout>
